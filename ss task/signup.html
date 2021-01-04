@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticket booking | signup</title>
+    <link rel="stylesheet" href="/signup.css">
+</head>
+<body>
+    <div class="bg-img">
+    <div class="signup-form">
+        
+        <h1 class="form-title">Create Account</h1>
+        <form action="" onsubmit=" return signValidate()">
+            <input type="text" class="input-box" placeholder="Enter username" id="uname">
+            <input type="email" class="input-box" placeholder="Enter email" id="email">
+            <input type="password" class="input-box" placeholder=" Enter password" id="firstpass">
+            <input type="password" class="input-box" placeholder=" Enter re-password" id="secondpass">
+           
+            
+            <button type="submit" id="sign"  class="sign-btn">Register</button>
+           
+            <hr><br>
+            <p class="or">OR</p>
+            <p>do you have an account ? <a href="/login.html">Log in</a> </p>
+        </form>
+    </div>
+    </div>
+
+
+    <script>
+            let username    = document.getElementById("uname");
+            let emailid     = document.getElementById("email");
+            let password1   = document.getElementById("firstpass");
+            let password2   = document.getElementById("secondpass");
+
+            function signValidate(){
+
+                if(username.value.trim() == "" && emailid.value.trim() =="" && password1.value.trim() =="" && password2.value.trim() ==""){
+                    alert("Please enter the fields")
+                    return false;
+                }
+              
+
+                else if(password1.value === password2.value){
+                    return true;
+
+                }
+                else if(password1.value.trim() !== password2.value.trim()){
+                    alert("password does not match")
+                    
+                    return false;
+                }
+                else {
+                    return true;
+                    
+                }
+            }
+           
+           
+
+
+    </script>
+</body>
+</html>

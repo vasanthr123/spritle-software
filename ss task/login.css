@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    
+}
+.bg-img{
+    background-image:linear-gradient(180deg, rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url(/img2.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #ffff;
+    position: relative;
+    top: 3rem;
+}
+
+.signin-form{
+    height: 27rem;
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0,0,0.3);
+    background: #fff;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center ;
+}
+.signin-form .form-title{
+    color: dodgerblue;
+    margin-bottom: 30px;
+
+}
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #999099;
+    outline: none;
+}
+button {
+    
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.sign-btn{
+    background-color: #1c8abd;
+ 
+}
+.signup-btn{
+    background-color: orangered;
+
+}
+a{
+    margin-top: 20px ;
+    width: 80%;
+    text-decoration: none;
+    color: #ffff;
+}
+.or{
+    background: #fff;
+    width: 30px;
+    margin: -11px auto 10px;
+}
+.signup-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width:640px){
+    .signin-form{
+        height: 25rem;
+        width: 275px;
+        padding: 20px;
+        margin: 6rem auto;
+       
+    }
+    .heading{
+        font-size: 20px;
+    }
+    
+}
